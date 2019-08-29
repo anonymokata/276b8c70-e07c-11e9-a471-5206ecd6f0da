@@ -12,8 +12,7 @@ namespace Pillar_Kata_Final_Grocery
         {
             string[,] expected ={ { "Lettuce", "1.29" }, { "Tomato", "1.00" }, { "Potaatos", ".35" } };
             string[,] actual = AllGroceryProductList.GroceryProduce();
-            Assert.Equal(expected, actual);
-            
+            Assert.Equal(expected, actual);   df
         }
 
 
