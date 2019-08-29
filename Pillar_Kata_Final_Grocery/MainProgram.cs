@@ -40,5 +40,5 @@ namespace Pillar_Kata_Final_Grocery
             Console.WriteLine("Thanks for shopping with Andre's ! Enjoy your products");
         }
     }
-    }
+    
 }
