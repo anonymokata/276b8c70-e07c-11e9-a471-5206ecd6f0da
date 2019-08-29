@@ -28,11 +28,11 @@ namespace Pillar_Kata_Final_Grocery
                 }
                 else if (choice == "3")
                 {
-                    MarkdownController.ShowMarkdownList(markdownList);
+                    
                 }
                 else if (choice == "0")
                 {
-                    proceed = false;
+                   
                 }
 
             }//ends progrom
