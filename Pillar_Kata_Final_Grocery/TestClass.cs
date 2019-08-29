@@ -5,9 +5,14 @@ using Xunit;
 
 namespace Pillar_Kata_Final_Grocery
 {
-    class TestClass
+    public class TestClass
     {
         [Fact]
-        public void 
+        public void GetAllGroceryProduce()
+        {
+           
+        }
+
+
     }
 }
