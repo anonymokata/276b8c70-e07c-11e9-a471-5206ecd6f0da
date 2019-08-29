@@ -24,7 +24,7 @@ namespace Pillar_Kata_Final_Grocery
         [Fact]
         public void GetAllGroceryDrinks()
         {
-            string[,] expected = { { "Ground Chuck", "1", "4.75" }, { "Ribs", "1", "3.75" }, { "T-Bone Steak", "1", "15.00" }, { "Brisket", "1", "10.99" } };
+            string[,] expected = { { "Water", "50.00" }, { "Pepsi", "2.00" }, { "Coke", "1.00" }, { "Fanta", "2.23" } };
             string[,] actual = AllGroceryProductList.GroceryDrink();
             Assert.Equal(expected, actual);
         }

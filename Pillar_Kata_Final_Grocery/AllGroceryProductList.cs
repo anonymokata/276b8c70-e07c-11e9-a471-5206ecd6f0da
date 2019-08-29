@@ -19,7 +19,7 @@ namespace Pillar_Kata_Final_Grocery
 
         public static string[,] GroceryDrink()
         {
-            string[,] drink = new string[,] { { "Lettuce", "1.29" }, { "Tomato", "1.00" }, { "Potaatos", ".35" } };
+            string[,] drink = new string[,] { {"Water","50.00"}, {"Pepsi", "2.00"}, {"Coke", "1.00"}, {"Fanta", "2.23" } };
             return drink;
         }
 
