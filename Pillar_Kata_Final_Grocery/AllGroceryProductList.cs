@@ -4,10 +4,5 @@ using System.Text;
 
 namespace Pillar_Kata_Final_Grocery
 {
-    class AllGroceryProductList
-    {
-        
-
-
-    }
+ 
 }

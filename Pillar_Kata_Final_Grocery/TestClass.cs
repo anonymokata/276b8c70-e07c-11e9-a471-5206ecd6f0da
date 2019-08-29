@@ -10,7 +10,10 @@ namespace Pillar_Kata_Final_Grocery
         [Fact]
         public void GetAllGroceryProduce()
         {
-           
+            string[,] expected ={ { "Lettuce", "1.29" } };
+            string[,] actual = AllGroceryProductList.GroceryProduce();
+            Assert.Equal(expected, actual);
+            
         }
 
 
