@@ -10,7 +10,7 @@ namespace Pillar_Kata_Final_Grocery
         {
             Console.WriteLine("Produce");
             Console.WriteLine("Meat");
-            Console.WriteLine("Beverages");
+            Console.WriteLine("Drink");
             return Console.ReadLine();
         }
     }

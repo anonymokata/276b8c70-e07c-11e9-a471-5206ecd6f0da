@@ -9,7 +9,7 @@ namespace Pillar_Kata_Final_Grocery
     {
         public static void Main()
         {
-            Console.WriteLine("Welcome to Andres Grocery Experience. WOuld you like to shop here ?");
+            Console.WriteLine("Welcome to Andres Grocery Experience. Would you like to shop here ?");
             
            bool proceed = true;
 
@@ -17,22 +17,33 @@ namespace Pillar_Kata_Final_Grocery
             {
                 Console.WriteLine("Welcome to Andres Grocery Experience. Please select a number from the menu?");
                 string choice = MainMenuView.MainMenu();
+                bool go = true;
+                while (go)
+                {
+                    var mainProductlist = AllGroceryProductList.GroceryProduce();
+                    if (choice == "1")
+                    {
+                        Console.WriteLine("Please choose from our selection");
+                        for(int i = 0; i < mainProductlist.GetUpperBound(0); i++)
+                        {
+                            var indexZero = mainProductlist[i, 0] + [];
+                            var indexOne = mainProductlist[i, 1];
+                            Console.WriteLine(indexZero, indexOne);
+                            Console.ReadKey();
+                        }
+                    }
+                    else if (choice == "2")
+                    {
 
-                if (choice == "1")
-                {
-                    
-                }
-                else if (choice == "2")
-                {
-                   
-                }
-                else if (choice == "3")
-                {
-                    
-                }
-                else if (choice == "0")
-                {
-                   
+                    }
+                    else if (choice == "3")
+                    {
+
+                    }
+                    else if (choice == "0")
+                    {
+
+                    }
                 }
 
             }//ends progrom
