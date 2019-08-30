@@ -26,9 +26,9 @@ namespace Pillar_Kata_Final_Grocery
                         Console.WriteLine("Please choose from our selection");
                         for(int i = 0; i < mainProductlist.GetUpperBound(0); i++)
                         {
-                            var indexZero = mainProductlist[i, 0] + [];
+                            var indexZero = mainProductlist[i, 0] ;
                             var indexOne = mainProductlist[i, 1];
-                            Console.WriteLine(indexZero, indexOne);
+                            Console.WriteLine("{0} {1}" , indexZero, indexOne);
                             Console.ReadKey();
                         }
                     }
