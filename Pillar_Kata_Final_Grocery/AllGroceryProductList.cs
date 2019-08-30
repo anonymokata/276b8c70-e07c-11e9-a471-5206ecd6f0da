@@ -23,7 +23,19 @@ namespace Pillar_Kata_Final_Grocery
             return drink;
         }
 
+        public static string TotalList()
+        {
+            var mainProductlist = AllGroceryProductList.GroceryProduce();
+            var one = mainProductlist[0, 0];
+            var two = mainProductlist[0, 1];
+            var three = mainProductlist[1, 0];
+            var four = mainProductlist[1, 1];
+            var five = mainProductlist[2, 0];
+            var six = mainProductlist[2, 1];
+            string totalAll = one + "" + two + "" + three + "" + four + "" + five + "" + six;
+            return totalAll;
 
+        }
 
 
     }

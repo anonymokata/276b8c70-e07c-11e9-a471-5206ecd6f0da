@@ -31,8 +31,9 @@ namespace Pillar_Kata_Final_Grocery
         [Fact]
         public void GetTotalListFromProduce()
         {
-            string[,] expected = { { "Lettuce", "1.29" }, { "Tomato", "1.00" }, { "Potaatos", ".35" } };
-            string[,] actual = AllGroceryProductList.TotalList();
+            string expected = "Lettuce" + "1.29"  + "Tomato" + "1.00" + "Potaatos" + ".35" ;
+            string actual = AllGroceryProductList.TotalList();
+            Assert.Equal(expected,actual);
             
         }
 
