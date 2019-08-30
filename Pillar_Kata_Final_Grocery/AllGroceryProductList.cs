@@ -32,8 +32,7 @@ namespace Pillar_Kata_Final_Grocery
             var four = mainProductlist[1, 1];
             var five = mainProductlist[2, 0];
             var six = mainProductlist[2, 1];
-            string totalAll = one + "" + two + "" + three + "" + four + "" + five + "" + six;
-            return totalAll;
+            return one + two + three + four + five + six;
         }
 
 
