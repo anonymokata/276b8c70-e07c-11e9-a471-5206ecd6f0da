@@ -23,8 +23,11 @@ namespace Pillar_Kata_Final_Grocery
 
                     if (choice == "1")
                     {
-                        AllGroceryProductList.TotalList();
+
+                       var print  = AllGroceryProductList.TotalList();
+                        Console.WriteLine(print);
                         Console.ReadKey();
+                        
                         
                     }
                     else if (choice == "2")
