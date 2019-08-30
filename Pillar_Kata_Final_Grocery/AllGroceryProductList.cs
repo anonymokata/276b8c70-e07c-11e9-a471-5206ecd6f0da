@@ -23,7 +23,20 @@ namespace Pillar_Kata_Final_Grocery
             return drink;
         }
 
+        public static string DisplayAllGroceryProducts()
+        {
+            string[,] mainProductlist = AllGroceryProductList.GroceryProduce();
+            Console.WriteLine("Please choose a number from our selection");
+            for (int i = 0; i <= mainProductlist.Length; i++)
+            {
 
+                string indexZero = mainProductlist[i, 0];
+                string indexOne = mainProductlist[i, 1];
+                string zeroOne = indexZero + indexOne;
+                return zeroOne;
+            }
+            return "please enter right nomenclature";
+        }
 
        
     }

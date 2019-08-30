@@ -20,15 +20,16 @@ namespace Pillar_Kata_Final_Grocery
                 bool go = true;
                 while (go)
                 {
-                    var mainProductlist = AllGroceryProductList.GroceryProduce();
+                   
                     if (choice == "1")
                     {
-                        Console.WriteLine("Please choose from our selection");
-                        for(int i = 0; i < mainProductlist.Length; i++)
+                        string[,] mainProductlist = AllGroceryProductList.GroceryProduce();
+                        Console.WriteLine("Please choose a number from our selection");
+                        for (int i = 0; i < mainProductlist.Length; i++)
                         {
-                            var indexZero = mainProductlist[i, 0] ;
-                            var indexOne = mainProductlist[i, 1];
-                            Console.WriteLine("{0} {1}" , indexZero, indexOne);
+                            string indexZero = mainProductlist[i, 0];
+                            string indexOne = mainProductlist[i, 1];
+                            Console.WriteLine("{0}: {1}", indexZero, indexOne);
                             Console.ReadKey();
                         }
                     }

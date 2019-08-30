@@ -8,9 +8,10 @@ namespace Pillar_Kata_Final_Grocery
     {
         public static string MainMenu()
         {
-            Console.WriteLine("Produce");
-            Console.WriteLine("Meat");
-            Console.WriteLine("Drink");
+
+            Console.WriteLine("1.......Produce");
+            Console.WriteLine("2.......Meat");
+            Console.WriteLine("3.......Drink");
             return Console.ReadLine();
         }
     }
