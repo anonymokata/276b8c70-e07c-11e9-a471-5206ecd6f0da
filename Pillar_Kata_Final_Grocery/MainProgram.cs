@@ -27,7 +27,10 @@ namespace Pillar_Kata_Final_Grocery
                        var print  = AllGroceryProductList.TotalList();
                         Console.WriteLine(print);
                         Console.ReadKey();
-                        
+                        Console.WriteLine();
+
+
+                        AddToKart.PutItemInKart();
                         
                     }
                     else if (choice == "2")

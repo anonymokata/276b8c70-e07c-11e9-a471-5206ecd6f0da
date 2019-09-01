@@ -6,19 +6,22 @@ namespace Pillar_Kata_Final_Grocery
 {
     public class AddToKart
     {
-
-        public static string[,] AddToKart(string item, string price)
+        public static string[,] PutItemInKart()
         {
-            string[,] kart = new string[3,2];
+            Console.WriteLine("::::Enter 3 selections of food name then price ::::");
 
-           for(int i =0; i < 3; i++)
+            string[,] kart = new string[2,3];
+            for (int i = 2; i >= 0; i--)
             {
-                for(int j =0; j <3; i++)
+                for(int j = 3; j >= 0; i--)
                 {
-                    Console.WriteLine("::::Enter foof then price ::::");
-                    kart[i,j]= 
+                    var userInput = Console.ReadLine();
+                    kart[i, j] = userInput;
                 }
             }
+            return kart;
+            
+            
             
            
 
