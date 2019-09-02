@@ -31,6 +31,10 @@ namespace Pillar_Kata_Final_Grocery
 
 
                         AddToKart.PutItemInKart();
+                        foreach(var item in AddToKart.PutItemInKart())
+                        {
+                            Console.WriteLine(item);
+                        }
                         
                     }
                     else if (choice == "2")
