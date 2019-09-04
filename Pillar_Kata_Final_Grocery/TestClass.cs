@@ -57,12 +57,21 @@ namespace Pillar_Kata_Final_Grocery
             var target = new KartItem() { Cost = expected };
             Assert.Equal(expected, target.Cost);
         }
+     
         [Fact]
-        public void AddToKartMethod()
+        public void AddToKartMethod(/*string input, int inputNumber, double inputPrice*/)
         {
-            var expected = ;
-            var actual = AddToKart.PutItemInKart;
-            Assert.Equal();
+            List<KartItem> testKart = new List<KartItem>();
+            testKart.Add(new KartItem()
+            {
+                Item = "item",
+                Pound = 3,
+                Cost = 3.45
+            }); ;
+            var expected = "item";
+            var actual = testKart;
+            Assert.Equal(expected, actual);
+
         }
 
     }
