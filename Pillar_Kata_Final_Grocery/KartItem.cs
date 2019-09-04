@@ -10,10 +10,16 @@ namespace Pillar_Kata_Final_Grocery
         public int Pound { get; set; }
         public double Cost { get; set; }
 
+        public KartItem(string item, int pound, double cost)
+        {
+            item = Item;
+            pound = Pound;
+            cost = Cost;
+        }
+
         public KartItem()
         {
 
         }
-
     }
 }

@@ -10,8 +10,8 @@ namespace Pillar_Kata_Final_Grocery
         public static void Main()
         {
             Console.WriteLine("Welcome to Andres Grocery Experience. Would you like to shop here ?");
-            
-           bool proceed = true;
+
+            bool proceed = true;
 
             while (proceed)
             {
@@ -24,18 +24,24 @@ namespace Pillar_Kata_Final_Grocery
                     if (choice == "1")
                     {
 
-                       var print  = AllGroceryProductList.TotalList();
+                        var print = AllGroceryProductList.TotalList();
                         Console.WriteLine(print);
                         Console.ReadKey();
                         Console.WriteLine();
 
-
-                        AddToKart.PutItemInKart();
-                        foreach(var item in AddToKart.PutItemInKart())
+                        Console.WriteLine("Pick item to place in kart");
+                        foreach (var item in AllGroceryProductList.GroceryProduce())
                         {
                             Console.WriteLine(item);
                         }
+                        var inputItem = Console.ReadLine();
+                        int inputPound = int.Parse(Console.ReadLine());
+                        double inputCost = double.Parse(Console.ReadLine());
+                        AddToKart.PutItemInKart(inputItem, inputPound, inputCost);
                         
+                        
+
+
                     }
                     else if (choice == "2")
                     {
@@ -55,6 +61,6 @@ namespace Pillar_Kata_Final_Grocery
 
             Console.WriteLine("Thanks for shopping with Andre's ! Enjoy your products");
         }
-    }
+}
     
 }

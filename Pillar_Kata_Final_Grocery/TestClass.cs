@@ -34,7 +34,28 @@ namespace Pillar_Kata_Final_Grocery
             string expected = "Lettuce" + "1.29"  + "Tomato" + "1.00" + "Potaatos" + ".35" ;
             string actual = AllGroceryProductList.TotalList();
             Assert.Equal(expected,actual);
+        }
+        [Fact]
+        public void CanGetAndSetItem()
+        {
+            var expected = new Random().ToString();
+            var target = new KartItem() { Item = expected };
+            Assert.Equal(expected, target.Item);
             
+        }
+        [Fact]
+        public void CanGetAndSetPound()
+        {
+            var expected = new Random().Next();
+            var target = new KartItem() { Pound = expected };
+            Assert.Equal(expected, target.Pound);
+        }
+        [Fact]
+        public void CanGetAndSetCost()
+        {
+            var expected = new Random().Next();
+            var target = new KartItem() { Cost = expected };
+            Assert.Equal(expected, target.Cost);
         }
 
 

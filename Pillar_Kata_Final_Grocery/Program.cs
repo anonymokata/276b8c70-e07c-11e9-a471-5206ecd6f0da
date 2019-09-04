@@ -7,6 +7,7 @@ namespace Pillar_Kata_Final_Grocery
         static void Main(string[] args)
         {
             MainProgram.Main();
+            
         }
     }
 }
