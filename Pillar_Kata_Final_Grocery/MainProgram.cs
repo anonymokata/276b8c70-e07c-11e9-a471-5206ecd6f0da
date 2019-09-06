@@ -34,10 +34,14 @@ namespace Pillar_Kata_Final_Grocery
                         {
                             Console.WriteLine(item);
                         }
+                        Console.WriteLine("Enter Item");
                         var inputItem = Console.ReadLine();
+                        Console.WriteLine("Enter Pounds");
                         int inputPound = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Enter Price");
                         double inputCost = double.Parse(Console.ReadLine());
                         AddToKart.PutItemInKart(inputItem, inputPound, inputCost);
+                        
                         
                         
 
