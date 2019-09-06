@@ -72,6 +72,22 @@ namespace Pillar_Kata_Final_Grocery
             //Assert
             Assert.Equal(expected, actual);
         }
+        [Fact]
+        public void AddKartMethodPound()
+        {
+            int expected = 3;
+            List<KartItem> numbers = AddToKart.PutItemInKart("mingt", expected, 4.45);
+            int actual = numbers[0].Pound;
+            Assert.Equal(expected, actual);
+        }
+        [Fact]
+        public void AddToKartMethodCost()
+        {
+            double expected = 34.56;
+            List<KartItem> cost = AddToKart.PutItemInKart("fdsf", 5, expected);
+            double actual = cost[0].Cost;
+            Assert.Equal(expected, actual);
+        }
 
     }
 }
