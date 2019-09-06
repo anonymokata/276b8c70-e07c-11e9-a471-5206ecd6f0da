@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
+
 namespace Pillar_Kata_Final_Grocery
 {
     public class TestClass
@@ -57,21 +58,19 @@ namespace Pillar_Kata_Final_Grocery
             var target = new KartItem() { Cost = expected };
             Assert.Equal(expected, target.Cost);
         }
-     
-        [Fact]
-        public void AddToKartMethod(/*string input, int inputNumber, double inputPrice*/)
-        {
-            List<KartItem> testKart = new List<KartItem>();
-            testKart.Add(new KartItem()
-            {
-                Item = "item",
-                Pound = 3,
-                Cost = 3.45
-            }); ;
-            var expected = "item";
-            var actual = testKart;
-            Assert.Equal(expected, actual);
 
+        [Fact]
+        public void AddToKartMethodItem()
+        {
+            //Arrange
+            string expected = "fdfdfsds";
+
+            //Act
+            List<KartItem> items = AddToKart.PutItemInKart(expected, 3, 4.5);
+            string actual = items[0].Item;
+
+            //Assert
+            Assert.Equal(expected, actual);
         }
 
     }
