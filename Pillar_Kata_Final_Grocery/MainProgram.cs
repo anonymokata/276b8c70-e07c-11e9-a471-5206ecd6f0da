@@ -10,7 +10,7 @@ namespace Pillar_Kata_Final_Grocery
         public static void Main()
         {
             Console.WriteLine("Welcome to Andres Grocery Experience. Would you like to shop here ?");
-
+            
             bool proceed = true;
 
             while (proceed)
@@ -26,8 +26,8 @@ namespace Pillar_Kata_Final_Grocery
                     if (choice == "1")
                     {
 
-                        var print = AllGroceryProductList.TotalList();
-                        Console.WriteLine(print);
+                        ////var print = AllGroceryProductList.TotalList();
+                        //Console.WriteLine(print);
                         Console.ReadKey();
                         Console.WriteLine();
                         Console.WriteLine("Pick item to place in kart");
@@ -35,22 +35,68 @@ namespace Pillar_Kata_Final_Grocery
                             {
                                 Console.WriteLine(item);
                             }
-                            Console.WriteLine("Enter Item");
-                            var inputItem = Console.ReadLine();
-                            Console.WriteLine("Enter Pounds");
-                            int inputPound = int.Parse(Console.ReadLine());
-                            Console.WriteLine("Enter Price");
-                            double inputCost = double.Parse(Console.ReadLine());
-                            kart.PutItemInKart(inputItem, inputPound, inputCost);
-                            break;
+                        Console.WriteLine("Enter Item");
+                        var inputItem = Console.ReadLine();
+                        Console.WriteLine("Enter Pounds");
+                        int inputPound = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Enter Price");
+                        double inputCost = double.Parse(Console.ReadLine());
+                        kart.PutItemInKart(inputItem, inputPound, inputCost);
+                        Console.WriteLine("your item in the kart");
+                        foreach(var item in kart.GetKart())
+                        {
+                            Console.WriteLine(item.Item);
+                        }
+                        break;
 
                     }
                     else if (choice == "2")
                     {
+                        Console.ReadKey();
+                        Console.WriteLine();
+                        Console.WriteLine("Pick item to place in kart");
+                        foreach (var item in AllGroceryProductList.GroceryMeat())
+                        {
+                            Console.WriteLine(item);
+                        }
+                        Console.WriteLine("Enter Item");
+                        var inputItem = Console.ReadLine();
+                        Console.WriteLine("Enter Pounds");
+                        int inputPound = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Enter Price");
+                        double inputCost = double.Parse(Console.ReadLine());
+                        kart.PutItemInKart(inputItem, inputPound, inputCost);
+                        Console.WriteLine("your item in the kart");
+                        foreach (var item in kart.GetKart())
+                        {
+                            Console.WriteLine(item.Item);
+                        }
+                        break;
+
 
                     }
                     else if (choice == "3")
                     {
+                        Console.ReadKey();
+                        Console.WriteLine();
+                        Console.WriteLine("Pick item to place in kart");
+                        foreach (var item in AllGroceryProductList.GroceryDrink())
+                        {
+                            Console.WriteLine(item);
+                        }
+                        Console.WriteLine("Enter Item");
+                        var inputItem = Console.ReadLine();
+                        Console.WriteLine("Enter Pounds");
+                        int inputPound = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Enter Price");
+                        double inputCost = double.Parse(Console.ReadLine());
+                        kart.PutItemInKart(inputItem, inputPound, inputCost);
+                        Console.WriteLine("your item in the kart");
+                        foreach (var item in kart.GetKart())
+                        {
+                            Console.WriteLine(item.Item);
+                        }
+                        break;
 
                     }
                     else if (choice == "0")
