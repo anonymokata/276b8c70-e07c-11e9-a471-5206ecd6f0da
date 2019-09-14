@@ -66,7 +66,8 @@ namespace Pillar_Kata_Final_Grocery
             string expected = "fdfdfsds";
 
             //Act
-            List<KartItem> items = AddToKart.PutItemInKart(expected, 3, 4.5);
+            Kart addKart = new Kart();
+            List<KartItem> items = addKart.PutItemInKart(expected, 3, 4.5);
             string actual = items[0].Item;
 
             //Assert
@@ -76,7 +77,8 @@ namespace Pillar_Kata_Final_Grocery
         public void AddKartMethodPound()
         {
             int expected = 3;
-            List<KartItem> numbers = AddToKart.PutItemInKart("mingt", expected, 4.45);
+            Kart addKart = new Kart();
+            List<KartItem> numbers = addKart.PutItemInKart("mingt", expected, 4.45);
             int actual = numbers[0].Pound;
             Assert.Equal(expected, actual);
         }
@@ -84,7 +86,8 @@ namespace Pillar_Kata_Final_Grocery
         public void AddToKartMethodCost()
         {
             double expected = 34.56;
-            List<KartItem> cost = AddToKart.PutItemInKart("fdsf", 5, expected);
+            Kart addKart = new Kart();
+            List<KartItem> cost = addKart.PutItemInKart("fdsf", 5, expected);
             double actual = cost[0].Cost;
             Assert.Equal(expected, actual);
         }

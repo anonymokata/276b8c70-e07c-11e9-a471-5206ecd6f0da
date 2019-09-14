@@ -15,9 +15,11 @@ namespace Pillar_Kata_Final_Grocery
 
             while (proceed)
             {
-                Console.WriteLine("Welcome to Andres Grocery Experience. Please select a number from the menu?");
+                Console.WriteLine("Welcome to Andres Grocery Experience. Please select a number from the menu? If");
                 string choice = MainMenuView.MainMenu();
                 bool go = true;
+                Kart kart = new Kart();
+                bool exitFlag = false;
                 while (go)
                 {
 
@@ -39,7 +41,8 @@ namespace Pillar_Kata_Final_Grocery
                             int inputPound = int.Parse(Console.ReadLine());
                             Console.WriteLine("Enter Price");
                             double inputCost = double.Parse(Console.ReadLine());
-                            AddToKart.PutItemInKart(inputItem, inputPound, inputCost);
+                            kart.PutItemInKart(inputItem, inputPound, inputCost);
+                            break;
 
                     }
                     else if (choice == "2")
@@ -52,9 +55,12 @@ namespace Pillar_Kata_Final_Grocery
                     }
                     else if (choice == "0")
                     {
-
+                        exitFlag = true;
+                        break;
                     }
                 }
+
+                if (exitFlag) break;
 
             }//ends progrom
 
