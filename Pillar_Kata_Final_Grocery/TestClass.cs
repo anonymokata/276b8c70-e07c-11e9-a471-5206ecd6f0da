@@ -91,6 +91,16 @@ namespace Pillar_Kata_Final_Grocery
             double actual = cost[0].Cost;
             Assert.Equal(expected, actual);
         }
+        [Fact]
+        public void VisibleKartItem()
+        {
+            Kart oneKart = new Kart();
+            var expected = oneKart.GetKart();
+            Kart kart = new Kart();
+            List<KartItem> all = kart.GetKart();
+            var actual = all;
+            Assert.Equal(expected, actual);
+        }
 
 
     }
