@@ -12,9 +12,9 @@ namespace Pillar_Kata_Final_Grocery
 
         public KartItem(string item, int pound, double cost)
         {
-            item = Item;
-            pound = Pound;
-            cost = Cost;
+            Item = item;
+            Pound = pound;
+            Cost = cost;
         }
 
         public KartItem()

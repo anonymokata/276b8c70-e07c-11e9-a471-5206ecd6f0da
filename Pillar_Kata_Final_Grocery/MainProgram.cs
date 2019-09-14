@@ -28,23 +28,18 @@ namespace Pillar_Kata_Final_Grocery
                         Console.WriteLine(print);
                         Console.ReadKey();
                         Console.WriteLine();
-
                         Console.WriteLine("Pick item to place in kart");
-                        foreach (var item in AllGroceryProductList.GroceryProduce())
-                        {
-                            Console.WriteLine(item);
-                        }
-                        Console.WriteLine("Enter Item");
-                        var inputItem = Console.ReadLine();
-                        Console.WriteLine("Enter Pounds");
-                        int inputPound = int.Parse(Console.ReadLine());
-                        Console.WriteLine("Enter Price");
-                        double inputCost = double.Parse(Console.ReadLine());
-                        AddToKart.PutItemInKart(inputItem, inputPound, inputCost);
-                        
-                        
-                        
-
+                            foreach (var item in AllGroceryProductList.GroceryProduce())
+                            {
+                                Console.WriteLine(item);
+                            }
+                            Console.WriteLine("Enter Item");
+                            var inputItem = Console.ReadLine();
+                            Console.WriteLine("Enter Pounds");
+                            int inputPound = int.Parse(Console.ReadLine());
+                            Console.WriteLine("Enter Price");
+                            double inputCost = double.Parse(Console.ReadLine());
+                            AddToKart.PutItemInKart(inputItem, inputPound, inputCost);
 
                     }
                     else if (choice == "2")
