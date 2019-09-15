@@ -104,8 +104,8 @@ namespace Pillar_Kata_Final_Grocery
         [Fact]
         public void DateTimeMarkDown()
         {
-            string expected = "There is no discount for your item at this time";
-            string actual = Deals.BuyOneGetOneFree();
+            string expected = "Lettuce";
+            string actual = Deals.BuyOneGetOneFree(expected);
             Assert.Equal(expected, actual);
 
             
