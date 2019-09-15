@@ -12,18 +12,22 @@ namespace Pillar_Kata_Final_Grocery
 
         public List<KartItem> PutItemInKart(string input, int inputNumber, double inputPrice)
         {
-           // List<KartItem> kart = new List<KartItem>();
-            kart.Add(new KartItem() {
-                Item = input,
-                Pound = inputNumber,
-                Cost = inputPrice
-            });;
-
+            for (int i = kart.Count; i <= 5; i++)
+            {
+                kart.Add(new KartItem()
+                {
+                    Item = input,
+                    Pound = inputNumber,
+                    Cost = inputPrice
+                }); ;
+                
+            }
             return kart;
         }
 
         public List<KartItem> GetKart()
         {
+
             return kart;
         }
     }

@@ -46,10 +46,12 @@ namespace Pillar_Kata_Final_Grocery
                         Console.WriteLine("your item in the kart");
                         foreach(var item in kart.GetKart())
                         {
-                            Deals.BuyOneGetOneFree(item.Item);
-                            Console.WriteLine(item.Item);
+                            Console.WriteLine(item.Cost);
+                           
                         }
                         
+
+
                         break;
 
                     }
