@@ -9,6 +9,7 @@ namespace Pillar_Kata_Final_Grocery
     {
         public static void Main()
         {
+            Console.WriteLine(1 +-'2' + 3);
             Console.WriteLine("Welcome to Andres Grocery Experience. Would you like to shop here ?");
             
             bool proceed = true;
@@ -112,6 +113,6 @@ namespace Pillar_Kata_Final_Grocery
 
             Console.WriteLine("Thanks for shopping with Andre's ! Enjoy your products");
         }
-}
+    }
     
 }

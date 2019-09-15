@@ -101,7 +101,13 @@ namespace Pillar_Kata_Final_Grocery
             var actual = all;
             Assert.Equal(expected, actual);
         }
+        [Fact]
+        public void DateTimeMarkDown()
+        {
+            expected = Deals.buyOneGetOneFree();
+            
 
+        }
 
     }
 }
