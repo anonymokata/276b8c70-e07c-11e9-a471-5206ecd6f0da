@@ -48,7 +48,7 @@ namespace Pillar_Kata_Final_Grocery
                     }
                     else if (choice == "2")
                     {
-                        Console.ReadKey();
+                        
                         Console.WriteLine();
                         Console.WriteLine("Pick item to place in kart");
                         foreach (var item in AllGroceryProductList.GroceryMeat())
@@ -71,7 +71,7 @@ namespace Pillar_Kata_Final_Grocery
                     }
                     else if (choice == "3")
                     {
-                        Console.ReadKey();
+                        
                         Console.WriteLine();
                         Console.WriteLine("Pick item to place in kart");
                         foreach (var item in AllGroceryProductList.GroceryDrink())
