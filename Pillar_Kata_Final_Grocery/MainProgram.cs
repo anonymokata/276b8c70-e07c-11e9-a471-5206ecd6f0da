@@ -9,7 +9,7 @@ namespace Pillar_Kata_Final_Grocery
     {
         public static void Main()
         {
-            Console.WriteLine(1 +-'2' + 3);
+            
             Console.WriteLine("Welcome to Andres Grocery Experience. Would you like to shop here ?");
             
             bool proceed = true;
@@ -26,10 +26,6 @@ namespace Pillar_Kata_Final_Grocery
 
                     if (choice == "1")
                     {
-
-                        ////var print = AllGroceryProductList.TotalList();
-                        //Console.WriteLine(print);
-                        Console.ReadKey();
                         Console.WriteLine();
                         Console.WriteLine("Pick item to place in kart");
                             foreach (var item in AllGroceryProductList.GroceryProduce())
@@ -46,14 +42,9 @@ namespace Pillar_Kata_Final_Grocery
                         Console.WriteLine("your item in the kart");
                         foreach(var item in kart.GetKart())
                         {
-                            Console.WriteLine(item.Cost);
-                           
+                            Console.WriteLine(item.Item);
                         }
-                        
-
-
                         break;
-
                     }
                     else if (choice == "2")
                     {
@@ -77,8 +68,6 @@ namespace Pillar_Kata_Final_Grocery
                             Console.WriteLine(item.Item);
                         }
                         break;
-
-
                     }
                     else if (choice == "3")
                     {
@@ -102,21 +91,17 @@ namespace Pillar_Kata_Final_Grocery
                             Console.WriteLine(item.Item);
                         }
                         break;
-
                     }
-                    else if (choice == "0")
+                    else if (choice == "n")
                     {
                         exitFlag = true;
                         break;
                     }
                 }
-
                 if (exitFlag) break;
 
             }//ends progrom
-
             Console.WriteLine("Thanks for shopping with Andre's ! Enjoy your products");
         }
     }
-    
 }

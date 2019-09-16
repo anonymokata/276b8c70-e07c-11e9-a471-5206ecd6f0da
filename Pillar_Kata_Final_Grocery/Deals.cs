@@ -16,8 +16,13 @@ namespace Pillar_Kata_Final_Grocery
                 
                 if (product == item )
                 {
-                    double getOnefree = item.Cost +-1;
-                    return "Your get one buy one credit applied today ! " + getOnefree.ToString();
+                    for(int i=0; i < item.Cost;i++)
+                    {
+
+                       
+                    }
+
+                    return "Your get one buy one credit applied today ! ";
                 }
             }
             return "There is no discount for your item at this time";
